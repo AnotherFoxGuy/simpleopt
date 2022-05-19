@@ -1,8 +1,8 @@
-#SimpleOpt
+# SimpleOpt
 
 A cross-platform command line library which can parse almost any of the standard command line formats in use today. It is designed explicitly to be portable to any platform and has been tested on Windows and Linux. 
 
-##FEATURES
+## FEATURES
 * MIT Licence allows free use in all software (including GPL and commercial)
 * multi-platform (Windows 95/98/ME/NT/2K/XP, Linux, Unix)
 * supports all lengths of option names:
@@ -51,7 +51,7 @@ Style                           | Description
 * complete working examples included
 * compiles cleanly at warning level 4 (Windows/VC.NET 2003), warning level 3 (Windows/VC6) and -Wall (Linux/gcc)
 
-##USAGE
+## USAGE
 The SimpleOpt class is used by following these steps:
 * Include the SimpleOpt.h header file
 ```c++
@@ -72,7 +72,7 @@ Note that all options must start with a hyphen even if the slash will be accepte
 ```c++
     { OPT_HELP, "-?", SO_NONE }, // "-?"
 ```
-*Instantiate a CSimpleOpt object supplying argc, argv and the option table
+* Instantiate a CSimpleOpt object supplying argc, argv and the option table
 ```c++
     CSimpleOpt args(argc, argv, g_rgOptions);
 ```
@@ -92,7 +92,7 @@ while (args.Next()) {
 ShowFiles(args.FileCount(), args.Files());
 ```
 
-##NOTES
+## NOTES
 * In MBCS mode, this library is guaranteed to work correctly only when all option names use only ASCII characters.
 * Note that if case-insensitive matching is being used then the first matching option in the argument list will be returned.
 
@@ -103,7 +103,7 @@ expand wildcards in command-line arguments to a list of all matching
 files. It is designed explicitly to be portable to any platform and has
 been tested on Windows and Linux. See the class definition for more details.
 
-##FEATURES
+## FEATURES
 - MIT Licence allows free use in all software (including GPL and commercial)
 - multi-platform (Windows 95/98/ME/NT/2K/XP, Linux, Unix)
 - supports most of the standard linux glob() options
@@ -114,7 +114,7 @@ been tested on Windows and Linux. See the class definition for more details.
 - complete working examples included
 - compiles cleanly at warning level 4 (Windows/VC.NET 2003), warning level 3 (Windows/VC6) and -Wall (Linux/gcc)
 
-##USAGE
+## USAGE
 
 Follow these steps:
 - Include the SimpleGlob.h header file
